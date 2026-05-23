@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta 4 | Retiro - Pilar</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Ruta 4</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="recorrido.html">Recorrido</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-text">
+            <span class="badge">Transporte interurbano de corta distancia</span>
+            <h1>Ruta 4: Retiro - Pilar</h1>
+            <p>
+                Un servicio pensado para conectar la Ciudad de Buenos Aires con Pilar
+                de manera cómoda, segura y puntual.
+            </p>
+            <a href="recorrido.html" class="btn">Ver recorrido</a>
+        </div>
+    </section>
+
+    <section class="section compra-pasaje">
+        <div class="compra-contenedor">
+            <div class="compra-texto">
+                <span class="badge">Compra online</span>
+                <h2>Buscá y reservá tu pasaje</h2>
+                <p>
+                    Elegí origen, destino, fecha y cantidad de pasajeros.
+                    La plataforma te mostrará los servicios disponibles para viajar en Ruta 4.
+                </p>
+            </div>
+
+            <form class="form-compra">
+                <div class="campo">
+                    <label for="origen">Origen</label>
+                    <select id="origen" name="origen">
+                        <option>Terminal de Retiro</option>
+                        <option>Av. del Libertador</option>
+                        <option>Panamericana</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="destino">Destino</label>
+                    <select id="destino" name="destino">
+                        <option>Pilar Centro</option>
+                        <option>Del Viso</option>
+                        <option>Manuel Alberti</option>
+                        <option>Escobar</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha de viaje</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="campo">
+                    <label for="pasajeros">Pasajeros</label>
+                    <input type="number" id="pasajeros" name="pasajeros" min="1" max="6" value="1">
+                </div>
+
+                <button type="submit">Buscar pasajes</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Una conexión directa hacia Pilar</h2>
+        <p>
+            La Ruta 4 une la Terminal de Retiro con distintos puntos estratégicos
+            del norte del Gran Buenos Aires, llegando hasta Pilar. Es una alternativa
+            ideal para estudiantes, trabajadores y pasajeros frecuentes.
+        </p>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Salida desde Retiro</h3>
+                <p>El recorrido inicia en la zona de terminales, con acceso a subtes, trenes y colectivos.</p>
+            </article>
+
+            <article class="card">
+                <h3>Destino Pilar</h3>
+                <p>El servicio finaliza en una zona de alto movimiento comercial, educativo y residencial.</p>
+            </article>
+
+            <article class="card">
+                <h3>Viaje cómodo</h3>
+                <p>Micros equipados con asientos reclinables, aire acondicionado y espacio para equipaje.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Destinos populares</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Retiro - Pilar Centro</h3>
+                <p>Servicio directo hacia una de las zonas de mayor movimiento del norte bonaerense.</p>
+            </article>
+
+            <article class="card">
+                <h3>Retiro - Del Viso</h3>
+                <p>Una opción práctica para pasajeros que viajan por estudio, trabajo o trámites.</p>
+            </article>
+
+            <article class="card">
+                <h3>Retiro - Escobar</h3>
+                <p>Conexión rápida con una zona residencial y comercial en crecimiento.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Servicios disponibles</h2>
+
+        <div class="cards">
+            <article class="card card1">
+                <h3>Retiro → Pilar Centro</h3>
+                <p>Salida: 08:30 | Llegada estimada: 09:45</p>
+                <p>Precio: $2600</p>
+                <a href="tarifas.html" class="btn">Seleccionar pasaje</a>
+            </article>
+
+            <article class="card card1">
+                <h3>Retiro → Del Viso</h3>
+                <p>Salida: 10:00 | Llegada estimada: 11:05</p>
+                <p>Precio: $2200</p>
+                <a href="tarifas.html" class="btn">Seleccionar pasaje</a>
+            </article>
+
+            <article class="card card1">
+                <h3>Retiro → Escobar</h3>
+                <p>Salida: 12:15 | Llegada estimada: 13:20</p>
+                <p>Precio: $2400</p>
+                <a href="tarifas.html" class="btn">Seleccionar pasaje</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Estado del servicio</h2>
+
+        <div class="estado-servicio">
+            <p><span class="punto-verde"></span> Servicio funcionando con normalidad</p>
+            <p>Última actualización: hoy, 08:00 hs.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Medios de pago</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Tarjeta de crédito</h3>
+                <p>Pagá tu pasaje de forma rápida y segura desde la plataforma.</p>
+            </article>
+
+            <article class="card">
+                <h3>Mercado Pago</h3>
+                <p>También podés abonar con billetera virtual y recibir el comprobante por mail.</p>
+            </article>
+
+            <article class="card">
+                <h3>SUBE</h3>
+                <p>Disponible para tramos habilitados del recorrido y viajes frecuentes.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>¿Puedo cancelar mi pasaje?</h3>
+                <p>Sí, hasta dos horas antes del horario de salida.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>¿Dónde sale el micro?</h3>
+                <p>Desde la Terminal de Retiro, con paradas intermedias señalizadas.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>¿Puedo llevar equipaje?</h3>
+                <p>Sí, cada pasajero puede llevar un bolso de mano y una valija pequeña.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>¿Cómo recibo el pasaje?</h3>
+                <p>El pasaje se envía al correo electrónico declarado en la compra.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <h2>Viajá de forma segura, rápida y organizada</h2>
+        <p>Consultá horarios, paradas, tarifas y servicios disponibles.</p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Ruta 4</h3>
+            <p>
+                Servicio de transporte de corta distancia con salidas desde Retiro
+                hacia Pilar y Zona Norte.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="recorrido.html">Recorrido</a>
+            <a href="horarios.html">Horarios</a>
+            <a href="tarifas.html">Tarifas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Terminal de Retiro, Buenos Aires</p>
+            <p>0800-555-RUTA4</p>
+            <a href="mailto:info@ruta4.com">info@ruta4.com</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Seguinos</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>X / Twitter</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Ruta 4 | Proyecto académico - Diseño y Desarrollo Web</p>
+    </div>
+</footer>
+
+</body>
+</html>
