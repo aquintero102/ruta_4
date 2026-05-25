@@ -432,7 +432,7 @@ footer {
     font-size: 14px;
 }
 
-/* RESPONSIVE FINAL */
+
 
 @media (max-width: 900px) {
     .compra-contenedor {
@@ -498,6 +498,9 @@ footer {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+    .table th {
+        width: 100%;
     }
 
     .footer-container {
