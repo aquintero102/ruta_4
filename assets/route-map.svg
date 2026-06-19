@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" fill="none">
+<rect width="800" height="520" rx="36" fill="#F8FAFC"/>
+<path d="M160 390C160 390 244 316 324 294C404 272 470 313 524 262C578 211 652 158 652 158" stroke="#38BDF8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="161" cy="390" r="26" fill="#0F172A"/><circle cx="324" cy="294" r="22" fill="#0F172A"/><circle cx="525" cy="262" r="22" fill="#0F172A"/><circle cx="652" cy="158" r="26" fill="#0F172A"/>
+<rect x="92" y="330" width="144" height="40" rx="14" fill="#0F172A"/><text x="114" y="357" fill="white" font-family="Arial" font-size="20">Retiro</text>
+<rect x="249" y="225" width="150" height="40" rx="14" fill="#0F172A"/><text x="266" y="252" fill="white" font-family="Arial" font-size="20">Libertador</text>
+<rect x="445" y="196" width="150" height="40" rx="14" fill="#0F172A"/><text x="466" y="223" fill="white" font-family="Arial" font-size="20">Panamericana</text>
+<rect x="586" y="92" width="124" height="40" rx="14" fill="#0F172A"/><text x="611" y="119" fill="white" font-family="Arial" font-size="20">Pilar</text>
+<circle cx="683" cy="402" r="54" fill="#DBEAFE"/>
+<path d="M666 405H700" stroke="#0F172A" stroke-width="10" stroke-linecap="round"/>
+<path d="M683 388V422" stroke="#0F172A" stroke-width="10" stroke-linecap="round"/>
+<path d="M123 133C123 101 148 76 180 76H496C528 76 553 101 553 133V165H123V133Z" fill="#E0F2FE"/>
+<rect x="147" y="101" width="219" height="18" rx="9" fill="#7DD3FC"/>
+<rect x="147" y="129" width="295" height="18" rx="9" fill="#BAE6FD"/>
+</svg>

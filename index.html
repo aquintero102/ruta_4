@@ -11,8 +11,9 @@
 <header>
     <nav class="navbar">
         <div class="logo">Ruta 4</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-index"><span></span></button>
+        <ul class="nav-links" id="menu-index">
+            <li><a href="index.html" class="activo">Inicio</a></li>
             <li><a href="recorrido.html">Recorrido</a></li>
             <li><a href="horarios.html">Horarios</a></li>
             <li><a href="tarifas.html">Tarifas</a></li>
@@ -27,12 +28,25 @@
     <section class="hero">
         <div class="hero-text">
             <span class="badge">Transporte interurbano de corta distancia</span>
-            <h1>Ruta 4: Retiro - Pilar</h1>
+            <h1>Ruta 4: conectá Retiro con Pilar de forma más ágil</h1>
             <p>
-                Un servicio pensado para conectar la Ciudad de Buenos Aires con Pilar
-                de manera cómoda, segura y puntual.
+                Una propuesta visual, clara y funcional para consultar recorridos, horarios, tarifas y servicios del corredor Retiro - Pilar.
             </p>
             <a href="recorrido.html" class="btn">Ver recorrido</a>
+            <a href="servicios.html" class="btn-alt">Conocer servicios</a>
+            <div class="hero-highlights">
+                <span>Salidas frecuentes</span>
+                <span>Compra orientativa</span>
+                <span>Accesibilidad incluida</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="summary-strip">
+            <article class="mini-stat"><strong>4</strong><p>Destinos destacados dentro del recorrido extendido.</p></article>
+            <article class="mini-stat"><strong>3</strong><p>Medios de pago para adaptar la experiencia a distintos usuarios.</p></article>
+            <article class="mini-stat"><strong>6</strong><p>Servicios principales, más criterios de accesibilidad específicos.</p></article>
         </div>
     </section>
 
@@ -45,6 +59,11 @@
                     Elegí origen, destino, fecha y cantidad de pasajeros.
                     La plataforma te mostrará los servicios disponibles para viajar en Ruta 4.
                 </p>
+                <ul class="lista-bullets">
+                    <li>Destinos: Pilar Centro, Del Viso, Manuel Alberti y Escobar.</li>
+                    <li>Datos claros sobre frecuencia, estado del servicio y medios de pago.</li>
+                    <li>Consulta simple, visual y pensada para una navegación rápida.</li>
+                </ul>
             </div>
 
             <form class="form-compra">
@@ -82,28 +101,54 @@
         </div>
     </section>
 
-    <section class="section">
-        <h2>Una conexión directa hacia Pilar</h2>
-        <p>
-            La Ruta 4 une la Terminal de Retiro con distintos puntos estratégicos
-            del norte del Gran Buenos Aires, llegando hasta Pilar. Es una alternativa
-            ideal para estudiantes, trabajadores y pasajeros frecuentes.
-        </p>
+    <section class="section route-preview">
+        <div>
+            <h2>Una conexión directa hacia Pilar</h2>
+            <p>
+                La Ruta 4 une la Terminal de Retiro con distintos puntos estratégicos del norte del Gran Buenos Aires.
+                Es una alternativa pensada para estudiantes, trabajadores y pasajeros frecuentes.
+            </p>
+            <div class="cards">
+                <article class="card">
+                    <h3>Salida desde Retiro</h3>
+                    <p>El recorrido inicia en una zona con acceso a subtes, trenes y colectivos.</p>
+                </article>
 
-        <div class="cards">
-            <article class="card">
-                <h3>Salida desde Retiro</h3>
-                <p>El recorrido inicia en la zona de terminales, con acceso a subtes, trenes y colectivos.</p>
+                <article class="card">
+                    <h3>Destino Pilar</h3>
+                    <p>El servicio finaliza en una zona de gran movimiento residencial, educativo y comercial.</p>
+                </article>
+            </div>
+        </div>
+        <div class="visual-card">
+            <img src="assets/route-map.svg" alt="Ilustración del recorrido entre Retiro y Pilar">
+        </div>
+    </section>
+
+    <section class="section gallery-section">
+        <h2>Postales del recorrido</h2>
+        <p>Una forma de volver la propuesta más cercana: visualizar momentos y espacios asociados al viaje.</p>
+        <div class="gallery-grid">
+            <article class="gallery-card">
+                <img src="assets/bus-stop.svg" alt="Ilustración de una parada y un micro urbano">
+                <div class="gallery-body">
+                    <h3>Salida ordenada</h3>
+                    <p>Información clara desde el inicio del viaje y una experiencia más intuitiva para el usuario.</p>
+                </div>
             </article>
-
-            <article class="card">
-                <h3>Destino Pilar</h3>
-                <p>El servicio finaliza en una zona de alto movimiento comercial, educativo y residencial.</p>
+            <article class="gallery-card">
+                <img src="assets/tickets.svg" alt="Ilustración sobre consulta y compra de pasajes">
+                <div class="gallery-body">
+                    <h3>Compra simple</h3>
+                    <p>Tarifas visibles, medios de pago disponibles y consulta rápida antes de salir.</p>
+                </div>
             </article>
-
-            <article class="card">
-                <h3>Viaje cómodo</h3>
-                <p>Micros equipados con asientos reclinables, aire acondicionado y espacio para equipaje.</p>
+            <article class="gallery-card">
+                <img src="assets/accessibility.svg" alt="Ilustración de accesibilidad en el transporte">
+                <div class="gallery-body">
+                    <h3>Viaje para todos</h3>
+                    <p>La propuesta incorpora accesibilidad como parte real del servicio, no como un detalle secundario.</p>
+                </div>
             </article>
         </div>
     </section>
@@ -130,7 +175,7 @@
     </section>
 
     <section class="section">
-        <h2>Servicios disponibles</h2>
+        <h2>Servicios destacados del día</h2>
 
         <div class="cards">
             <article class="card card1">
@@ -162,6 +207,20 @@
         <div class="estado-servicio">
             <p><span class="punto-verde"></span> Servicio funcionando con normalidad</p>
             <p>Última actualización: hoy, 08:00 hs.</p>
+        </div>
+    </section>
+
+    <section class="section visual-split">
+        <div class="visual-panel">
+            <img src="assets/accessibility.svg" alt="Ilustración sobre accesibilidad y asistencia al pasajero">
+        </div>
+        <div>
+            <h2>Accesibilidad incorporada al servicio</h2>
+            <p>La propuesta no se queda solo en comodidad: también contempla ascenso asistido, información visual y sonora, espacios reservados y canales de consulta específicos.</p>
+            <div class="cta-inline">
+                <a href="servicios.html#accesibilidad" class="btn">Ver accesibilidad</a>
+                <a href="contacto.html" class="btn-alt" style="color:#0f172a;background:#e0f2fe;border-color:#bae6fd;">Pedir asistencia</a>
+            </div>
         </div>
     </section>
 
@@ -214,7 +273,7 @@
 
     <section class="banner">
         <h2>Viajá de forma segura, rápida y organizada</h2>
-        <p>Consultá horarios, paradas, tarifas y servicios disponibles.</p>
+        <p>Consultá horarios, paradas, tarifas y servicios disponibles en un entorno visual más dinámico y atractivo.</p>
     </section>
 
 </main>
@@ -249,17 +308,20 @@
 
         <div class="footer-section">
             <h3>Seguinos</h3>
-            <p>Instagram</p>
-            <p>Facebook</p>
-            <p>X / Twitter</p>
+            <div class="social-pills">
+                <span>Instagram</span>
+                <span>Facebook</span>
+                <span>X / Twitter</span>
+            </div>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Ruta 4 | Proyecto académico - Diseño y Desarrollo Web</p>
+        <p>© 2026 Ruta 4 | Proyecto académico · Diseño y Desarrollo Web</p>
     </div>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>

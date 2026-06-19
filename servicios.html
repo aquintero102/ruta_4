@@ -11,12 +11,13 @@
 <header>
     <nav class="navbar">
         <div class="logo">Ruta 4</div>
-        <ul class="nav-links">
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-servicios"><span></span></button>
+        <ul class="nav-links" id="menu-servicios">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="recorrido.html">Recorrido</a></li>
             <li><a href="horarios.html">Horarios</a></li>
             <li><a href="tarifas.html">Tarifas</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="servicios.html" class="activo">Servicios</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
@@ -24,13 +25,25 @@
 
 <section class="page-header">
     <h1>Servicios</h1>
-    <p>Comodidades pensadas para cada viaje</p>
+    <p>Comodidades, asistencia y criterios de accesibilidad para cada viaje</p>
 </section>
 
 <main class="section">
-    <h2>Qué ofrece Ruta 4</h2>
+    <div class="visual-split">
+        <div class="visual-panel">
+            <img src="assets/accessibility.svg" alt="Ilustración sobre accesibilidad y servicios para pasajeros">
+        </div>
+        <div>
+            <h2>Qué ofrece Ruta 4</h2>
+            <p class="intro-servicios">Además de comodidad durante el viaje, la propuesta contempla condiciones de accesibilidad para que más personas puedan utilizar el servicio de forma segura, clara y autónoma.</p>
+            <div class="cta-inline">
+                <a href="#accesibilidad" class="btn">Ir a accesibilidad</a>
+                <a href="contacto.html" class="btn-alt" style="color:#0f172a;background:#e0f2fe;border-color:#bae6fd;">Contactar asistencia</a>
+            </div>
+        </div>
+    </div>
 
-    <div class="cards">
+    <div class="cards" style="margin-top:34px;">
         <article class="card">
             <h3>Aire acondicionado</h3>
             <p>Un ambiente cómodo durante todo el recorrido, tanto en verano como en invierno.</p>
@@ -61,6 +74,60 @@
             <p>Canales de consulta para reclamos, sugerencias e información sobre el servicio.</p>
         </article>
     </div>
+
+
+    <section class="accesibilidad-dedicada" id="accesibilidad">
+        <div class="accesibilidad-texto">
+            <span class="badge">Accesibilidad</span>
+            <h2>Servicio pensado para personas con discapacidad</h2>
+            <p>
+                Ruta 4 incorpora criterios de accesibilidad para mejorar la experiencia de pasajeros con movilidad reducida,
+                discapacidad visual, discapacidad auditiva o necesidades de asistencia durante el recorrido.
+            </p>
+        </div>
+
+        <div class="accesibilidad-grid">
+            <article class="accesibilidad-card">
+                <h3>Ascenso asistido</h3>
+                <p>Orientación del personal para acompañar el ingreso y descenso de personas con movilidad reducida.</p>
+            </article>
+
+            <article class="accesibilidad-card">
+                <h3>Espacios reservados</h3>
+                <p>Identificación de lugares prioritarios para personas mayores, embarazadas o pasajeros con discapacidad.</p>
+            </article>
+
+            <article class="accesibilidad-card">
+                <h3>Señalización clara</h3>
+                <p>Paradas, horarios y puntos de ascenso organizados con información visible y fácil de interpretar.</p>
+            </article>
+
+            <article class="accesibilidad-card">
+                <h3>Información visual y sonora</h3>
+                <p>Comunicación de avisos importantes mediante recursos visuales y mensajes sonoros durante el servicio.</p>
+            </article>
+
+            <article class="accesibilidad-card">
+                <h3>Canales de consulta</h3>
+                <p>Atención al pasajero para resolver dudas sobre paradas accesibles, horarios y condiciones del viaje.</p>
+            </article>
+
+            <article class="accesibilidad-card">
+                <h3>Prioridad de atención</h3>
+                <p>Asistencia preferencial ante reclamos, consultas o situaciones especiales vinculadas con accesibilidad.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="nota-accesibilidad">
+        <h2>Antes de viajar</h2>
+        <p>
+            Si necesitás asistencia específica, se recomienda consultar previamente por los canales de contacto para confirmar
+            disponibilidad, parada más conveniente y condiciones del servicio.
+        </p>
+        <a href="contacto.html" class="btn">Consultar asistencia</a>
+    </section>
+
 </main>
 
 <footer class="footer">
@@ -69,8 +136,8 @@
         <div class="footer-section">
             <h3>Ruta 4</h3>
             <p>
-                Servicio de transporte de corta distancia
-                con salidas desde Retiro hacia Pilar y Zona Norte.
+                Servicio de transporte de corta distancia con salidas desde Retiro
+                hacia Pilar y Zona Norte.
             </p>
         </div>
 
@@ -80,6 +147,8 @@
             <a href="recorrido.html">Recorrido</a>
             <a href="horarios.html">Horarios</a>
             <a href="tarifas.html">Tarifas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
         </div>
 
         <div class="footer-section">
@@ -91,17 +160,20 @@
 
         <div class="footer-section">
             <h3>Seguinos</h3>
-            <p>Instagram</p>
-            <p>Facebook</p>
-            <p>X / Twitter</p>
+            <div class="social-pills">
+                <span>Instagram</span>
+                <span>Facebook</span>
+                <span>X / Twitter</span>
+            </div>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Ruta 4 | Proyecto académico - Diseño y Desarrollo Web</p>
+        <p>© 2026 Ruta 4 | Proyecto académico · Diseño y Desarrollo Web</p>
     </div>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -11,10 +11,11 @@
 <header>
     <nav class="navbar">
         <div class="logo">Ruta 4</div>
-        <ul class="nav-links">
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-horarios"><span></span></button>
+        <ul class="nav-links" id="menu-horarios">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="recorrido.html">Recorrido</a></li>
-            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="horarios.html" class="activo">Horarios</a></li>
             <li><a href="tarifas.html">Tarifas</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -28,35 +29,50 @@
 </section>
 
 <main class="section">
-    <h2>Salidas desde Retiro</h2>
+    <div class="visual-split">
+        <div>
+            <h2>Salidas desde Retiro</h2>
+            <p>La frecuencia se organiza por franjas para que el servicio mantenga una lógica clara y fácil de consultar.</p>
 
-    <table class="table">
-        <tr>
-            <th>Turno</th>
-            <th>Horario</th>
-            <th>Frecuencia</th>
-        </tr>
-        <tr>
-            <td>Mañana</td>
-            <td>06:00 - 11:30</td>
-            <td>Cada 30 minutos</td>
-        </tr>
-        <tr>
-            <td>Mediodía</td>
-            <td>12:00 - 15:30</td>
-            <td>Cada 45 minutos</td>
-        </tr>
-        <tr>
-            <td>Tarde</td>
-            <td>16:00 - 20:30</td>
-            <td>Cada 30 minutos</td>
-        </tr>
-        <tr>
-            <td>Noche</td>
-            <td>21:00 - 23:30</td>
-            <td>Cada 60 minutos</td>
-        </tr>
-    </table>
+            <table class="table">
+                <tr>
+                    <th>Turno</th>
+                    <th>Horario</th>
+                    <th>Frecuencia</th>
+                </tr>
+                <tr>
+                    <td>Mañana</td>
+                    <td>06:00 - 11:30</td>
+                    <td>Cada 30 minutos</td>
+                </tr>
+                <tr>
+                    <td>Mediodía</td>
+                    <td>12:00 - 15:30</td>
+                    <td>Cada 45 minutos</td>
+                </tr>
+                <tr>
+                    <td>Tarde</td>
+                    <td>16:00 - 20:30</td>
+                    <td>Cada 30 minutos</td>
+                </tr>
+                <tr>
+                    <td>Noche</td>
+                    <td>21:00 - 23:30</td>
+                    <td>Cada 60 minutos</td>
+                </tr>
+            </table>
+        </div>
+        <div class="visual-panel">
+            <img src="assets/tickets.svg" alt="Ilustración sobre organización de horarios y salidas">
+        </div>
+    </div>
+
+    <section class="section" style="padding-left:0;padding-right:0;">
+        <div class="note-box">
+            <h2>Consejo para viajar mejor</h2>
+            <p>En horarios pico conviene llegar con algunos minutos de anticipación para ubicar la parada, validar el medio de pago y organizar el ascenso de forma más tranquila.</p>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -65,8 +81,8 @@
         <div class="footer-section">
             <h3>Ruta 4</h3>
             <p>
-                Servicio de transporte de corta distancia
-                con salidas desde Retiro hacia Pilar y Zona Norte.
+                Servicio de transporte de corta distancia con salidas desde Retiro
+                hacia Pilar y Zona Norte.
             </p>
         </div>
 
@@ -76,6 +92,8 @@
             <a href="recorrido.html">Recorrido</a>
             <a href="horarios.html">Horarios</a>
             <a href="tarifas.html">Tarifas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
         </div>
 
         <div class="footer-section">
@@ -87,17 +105,20 @@
 
         <div class="footer-section">
             <h3>Seguinos</h3>
-            <p>Instagram</p>
-            <p>Facebook</p>
-            <p>X / Twitter</p>
+            <div class="social-pills">
+                <span>Instagram</span>
+                <span>Facebook</span>
+                <span>X / Twitter</span>
+            </div>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Ruta 4 | Proyecto académico - Diseño y Desarrollo Web</p>
+        <p>© 2026 Ruta 4 | Proyecto académico · Diseño y Desarrollo Web</p>
     </div>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>

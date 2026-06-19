@@ -11,13 +11,14 @@
 <header>
     <nav class="navbar">
         <div class="logo">Ruta 4</div>
-        <ul class="nav-links">
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-contacto"><span></span></button>
+        <ul class="nav-links" id="menu-contacto">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="recorrido.html">Recorrido</a></li>
             <li><a href="horarios.html">Horarios</a></li>
             <li><a href="tarifas.html">Tarifas</a></li>
             <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
         </ul>
     </nav>
 </header>
@@ -28,29 +29,45 @@
 </section>
 
 <main class="section">
-    <h2>Formulario de contacto</h2>
+    <div class="contact-layout">
+        <div>
+            <h2>Formulario de contacto</h2>
 
-    <form class="form">
-        <label for="nombre">Nombre y apellido</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
+            <form class="form">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
 
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
 
-        <label for="motivo">Motivo de consulta</label>
-        <select id="motivo" name="motivo">
-            <option>Horarios</option>
-            <option>Tarifas</option>
-            <option>Recorrido</option>
-            <option>Reclamo</option>
-            <option>Otro</option>
-        </select>
+                <label for="motivo">Motivo de consulta</label>
+                <select id="motivo" name="motivo">
+                    <option>Horarios</option>
+                    <option>Tarifas</option>
+                    <option>Recorrido</option>
+                    <option>Accesibilidad</option>
+                    <option>Reclamo</option>
+                    <option>Otro</option>
+                </select>
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta"></textarea>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta"></textarea>
 
-        <button type="submit">Enviar consulta</button>
-    </form>
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </div>
+        <div class="visual-panel">
+            <img src="assets/contact.svg" alt="Ilustración sobre contacto y asistencia al usuario">
+            <div class="cta-inline" style="margin-top:20px;">
+                <div class="note-box">
+                    <h3>Atención al usuario</h3>
+                    <p>Terminal de Retiro, Buenos Aires</p>
+                    <p>0800-555-RUTA4</p>
+                    <p>info@ruta4.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">
@@ -59,8 +76,8 @@
         <div class="footer-section">
             <h3>Ruta 4</h3>
             <p>
-                Servicio de transporte de corta distancia
-                con salidas desde Retiro hacia Pilar y Zona Norte.
+                Servicio de transporte de corta distancia con salidas desde Retiro
+                hacia Pilar y Zona Norte.
             </p>
         </div>
 
@@ -70,6 +87,8 @@
             <a href="recorrido.html">Recorrido</a>
             <a href="horarios.html">Horarios</a>
             <a href="tarifas.html">Tarifas</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
         </div>
 
         <div class="footer-section">
@@ -81,17 +100,20 @@
 
         <div class="footer-section">
             <h3>Seguinos</h3>
-            <p>Instagram</p>
-            <p>Facebook</p>
-            <p>X / Twitter</p>
+            <div class="social-pills">
+                <span>Instagram</span>
+                <span>Facebook</span>
+                <span>X / Twitter</span>
+            </div>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Ruta 4 | Proyecto académico - Diseño y Desarrollo Web</p>
+        <p>© 2026 Ruta 4 | Proyecto académico · Diseño y Desarrollo Web</p>
     </div>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
