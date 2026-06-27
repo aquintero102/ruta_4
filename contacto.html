@@ -35,13 +35,13 @@
 
             <form class="form">
                 <label for="nombre">Nombre y apellido</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
 
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
 
                 <label for="motivo">Motivo de consulta</label>
-                <select id="motivo" name="motivo">
+                <select id="motivo" name="motivo" required>
                     <option>Horarios</option>
                     <option>Tarifas</option>
                     <option>Recorrido</option>
@@ -51,7 +51,7 @@
                 </select>
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta"></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta" required></textarea>
 
                 <button type="submit">Enviar consulta</button>
             </form>
