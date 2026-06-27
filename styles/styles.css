@@ -112,11 +112,25 @@ header {
     position: relative;
 }
 
-.menu-toggle::before { top: -7px; }
-.menu-toggle::after { top: 7px; }
-.menu-toggle.is-open span { background: transparent; }
-.menu-toggle.is-open::before { transform: translateY(10px) rotate(45deg); }
-.menu-toggle.is-open::after { transform: translateY(-10px) rotate(-45deg); }
+.menu-toggle::before { 
+    top: -7px; 
+}
+
+.menu-toggle::after { 
+    top: 7px; 
+}
+
+.menu-toggle.is-open span { 
+    background: transparent; 
+}
+
+.menu-toggle.is-open::before { 
+    transform: translateY(10px) rotate(45deg); 
+}
+
+.menu-toggle.is-open::after { 
+    transform: translateY(-10px) rotate(-45deg); 
+}
 
 .hero {
     min-height: 78vh;
@@ -746,6 +760,22 @@ header {
         border-radius: 16px;
         gap: 0;
         box-shadow: 0 16px 28px rgba(0,0,0,0.24);
+    }
+
+    .navbar:focus-within .nav-links {
+        display: flex;
+    }
+
+    .navbar:focus-within .menu-toggle span {
+        background: transparent;
+    }
+
+    .navbar:focus-within .menu-toggle::before {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .navbar:focus-within .menu-toggle::after {
+        transform: translateY(-10px) rotate(-45deg);
     }
 
     .nav-links.open {
